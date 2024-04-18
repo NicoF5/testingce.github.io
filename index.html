@@ -36,18 +36,18 @@
     </center>
 
     <h1 style="text-align:center;">Welcome to our testing site!</h2>
-    <form action="" method="get" class="form-example">
-  <div class="form-example">
-    <label for="name">Enter your name: </label>
-    <input type="text" name="name" id="name" required />
-  </div>
-  <div class="form-example sm_cobrowsing_hidden_field">
-    <label for="email">Enter your email: </label>
-    <input type="email" name="email" id="email" required />
-  </div>
-  <div class="form-example">
-    <input type="submit" value="Subscribe!" />
-  </div>
+    <form action="action" method="get">
+  First name:
+  <!-- This input field value will be shown as `*`(s) to the operator -->
+  <input class="sm_cobrowsing_masked_field" type="text" name="first_name" />
+  Last name:
+  <!-- This input field value will be shown as `*`(s) to the operator -->
+  <input
+    class="sm_cobrowsing_masked_field last_name_class"
+    type="text"
+    name="last_name"
+  />
+  <input type="submit" value="Submit" />
 </form>
     
   </body>
